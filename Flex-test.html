@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      #global {
+        background-color: blue;
+        display: flex;
+        flex-flow: row-reverse wrap;
+        align-items: flex-end;
+      }
+
+      #global div{
+        width: 100px;
+        margin: 100px;
+        background-color: yellow;
+      }
+
+      #box1{
+        flex: 3 1 100px;
+        background-color: yellow;
+      }
+
+      #box2{
+        flex: 2 1 100px;
+        background-color: red;
+      }
+
+      #box3{
+        flex: 1 4 300px;
+        background-color: blue;
+      }
+
+      .groupe{
+        color: red;
+        background-color: cyan;
+        margin:10px;
+
+        float:right;
+      }
+
+      body{background-color: black}
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="global">
+      <div id="box1">one</div>
+      <div id="box2">two</div>
+      <div id="box3">three</div>
+      <!-- <div class="groupe">four</div>
+      <div class="groupe">three</div>
+      <div class="groupe">five</div>
+      <div class="groupe">six</div>
+      <div class="groupe">seven</div>
+      <div class="groupe">height</div>
+      <div class="groupe">nine</div>
+      <div class="groupe">ten</div> -->
+    </div>
+
+  </body>
+</html>
